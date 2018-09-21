@@ -4,6 +4,10 @@ public class Animal {
     private String type;
     private String food;
 
+    public Animal(String type, String food) {
+        this.type = type;
+        this.food = food;
+    }
     public void setType(String type) {
         this.type = type;
     }
@@ -19,4 +23,6 @@ public class Animal {
     public String getFood() {
         return this.food;
     }
+
+    public abstract void swim();
 }

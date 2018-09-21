@@ -38,19 +38,21 @@ public class LonelyTwitterActivity extends Activity {
 
 			public void onClick(View v) {
 				public void onClick(View v) {
-					Cat cat1 = new Cat();
-					cat1.setType("I am a cat");
-					cat1.setFood("I love fish and rice");
+					Cat cat1 = new Cat("I am a cat", "I love fish and rice");
+					// cat1.setType("I am a cat");
+					// cat1.setFood("I love fish and rice");
 
-					DomesticDuck domesticDuck1 = new DomesticDuck();
-					domesticDuck1.setType("I am a domestic duck");
-					domesticDuck1.setFood("I love fish");
+					DomesticDuck domesticDuck1 = new DomesticDuck("I am a domestic duck", "I love fish");
+					// domesticDuck1.setType("I am a domestic duck");
+					// domesticDuck1.setFood("I love fish");
 
 					Log.d(tag:"cmput-301", cat1.getType());
 					Log.d(tag:"cmput-301", cat1.getFood());
 					Log.d(tag:"cmput-301", domesticDuck1.getType());
 					Log.d(tag:"cmput-301", domesticDuck1.getFood());
 
+					cat1.swim();
+					domesticDuck1.swim();
 				}
 
 			}
